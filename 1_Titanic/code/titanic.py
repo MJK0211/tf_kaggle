@@ -20,6 +20,52 @@ test = pd.read_csv('./data/csv/train.csv',
                      encoding='UTF-8'
 )
 
+print(gender.shape) #(418, 1)
+print(train.shape) #(891, 11)
+print(test.shape) #(891, 11)
+
+print(train.isnull().sum())
+# Survived      0
+# Pclass        0
+# Name          0
+# Sex           0
+# Age         177
+# SibSp         0
+# Parch         0
+# Ticket        0
+# Fare          0
+# Cabin       687
+# Embarked      2
+# dtype: int64
+
+print(test.isnull().sum())
+# Survived      0
+# Pclass        0
+# Name          0
+# Sex           0
+# Age         177
+# SibSp         0
+# Parch         0
+# Ticket        0
+# Fare          0
+# Cabin       687
+# Embarked      2
+# dtype: int64
+# Survived      0
+# Pclass        0
+# Name          0
+# Sex           0
+# Age         177
+# SibSp         0
+# Parch         0
+# Ticket        0
+# Fare          0
+# Cabin       687
+# Embarked      2
+# dtype: int64
+
+
+'''
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style='darkgrid')
@@ -32,6 +78,5 @@ def bar_chart(feature):
     df.plot(kind='bar', stacked=True, figsize=(10,5))
     plt.show()
 
-bar_chart('Sex')
-
-
+# bar_chart('Sex')
+'''
